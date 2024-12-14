@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <form id="user-form">
+            <!-- username -->
+            <label for="username">Enter your Name</label>
+            <input type="text" id="username">
+
+            <!-- user designation -->
+            <label for="designation">Enter your Designation</label>
+            <input type="text" id="designation">
+
+            <!-- user number -->
+            <label for="number">Enter your Number</label>
+            <input type="tel" id="number">
+
+            <!-- user address -->
+            <label for="address">Enter your Address</label>
+            <input type="text" id="address">
+
+            <!-- user link -->
+            <label for="qr-link">Enter your Link</label>
+            <input type="text" id="qr-link">
+
+            <button type="button" id="update-button">Generate Business Card</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="card-container">
+
+            <div class="card-front">
+                <div class="card-logo">
+                    <img src="./assets/logo.png" alt="" class="logo-img">
+                </div>
+            </div>
+
+            <div class="card-back">
+                <div class="assignee-details">
+                    <div class="name">
+                        <strong><span id="display-name">User name</span></strong>
+                        <br>
+                        <span id="display-designation">User designation</span>
+                    </div>
+                    <div id="display-number">Phone number</div>
+                </div>
+
+                <div class="qr-container">
+                    <div class="qr-image">
+                        <img src="" alt="" id="qr-img">
+                    </div>
+                </div>
+
+                <div class="address">
+                    <span id="assignee-address">Address</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- qr code library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="./script.js"></script>
+</body>
+</html>
