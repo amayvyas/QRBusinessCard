@@ -5,6 +5,62 @@
     /* outline: red; */
 }
 
+/* HEADER  */
+
+header{
+    width: 100%;
+    height: 10vh;
+    padding: 5px;
+    background-color:#F4F4F4;
+}
+
+.logo {
+    width: 25%;
+    height: 8.5vh;
+}
+
+.logo > a {
+    text-decoration: none;
+}
+
+.brand-logo {
+    width: 100%;
+    height:100%;
+}
+
+/* FORM SECTION  */
+
+.section-form {
+    padding:50px 0px;
+    background-color: #F4F4F4;
+    display: flex;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin: 0px 75px;
+}
+
+#user-form {
+    line-height: 32px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+input {
+    width: 360px;
+    height: 36px;
+    border: 1px solid ;
+    border-radius: 24px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+
+
+/* CARD SECTION  */
+
 .container {
     width: 100%;
     height: 100vh; /*full viewport height*/
