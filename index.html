@@ -25,35 +25,43 @@
                     <!-- username -->
                     <label for="username">Enter your Name</label>
                     <br>
-                    <input type="text" id="username">
+                    <input type="text" id="username" placeholder="John Doe" required>
                     <br>
                     <br>
                 
                     <!-- user designation -->
                     <label for="designation">Enter your Designation</label>
                     <br>
-                    <input type="text" id="designation">
+                    <input type="text" id="designation" placeholder="Devloper" required>
                     <br>
                     <br>
                 
                     <!-- user number -->
                     <label for="number">Enter your Number</label>
                     <br>
-                    <input type="tel" id="number">
+                    <input type="tel" id="number" placeholder="+91-12345-67890" required>
                     <br>
                     <br>
                 
                     <!-- user address -->
                     <label for="address">Enter your Address</label>
                     <br>
-                    <input type="text" id="address">
+                    <input type="text" id="address" placeholder="Delhi,India" required>
                     <br>
                     <br>
                 
                     <!-- user link -->
                     <label for="qr-link">Enter your Link</label>
                     <br>
-                    <input type="text" id="qr-link">
+                    <input type="text" id="qr-link" placeholder="link to your socials" required>
+                    <br>
+                    <br>
+
+                    <!-- user logo image  -->
+                    <label for="logo-on-card">Enter your logo</label>
+                    <br>
+                    <input type="file" id="image-upload" accept="image/*">
+                    <!-- <button id="process-btn">Remove Background & Add to Card</button> -->
                     <br>
                     <br>
                 
@@ -63,13 +71,7 @@
 
             <div class="container">
                 <div class="card-container">
-                
-                    <div class="card-front">
-                        <div class="card-logo">
-                            <img src="./assets/logo.png" alt="" class="logo-img">
-                        </div>
-                    </div>
-                
+
                     <div class="card-back">
                         <div class="assignee-details">
                             <div class="name">
@@ -90,6 +92,15 @@
                             <span id="assignee-address">Address</span>
                         </div>
                     </div>
+                
+                    <div class="card-front">
+                        <div class="image-container" id="profile-image">
+                            <!-- Image after background removal will appear here -->
+                            <img src="placeholder.jpg" alt="Profile Picture" id="image-preview">
+                        </div>
+                        
+                    </div>
+            
                 </div>
             </div>
             
